@@ -9,9 +9,10 @@ def randomization(n):
     A - a randomly-generated nx1 Numpy array.
     """
     #Your code here
-    A = np.zeros((n, 1)) 
+    A = []
     for i in range(0,n):
-        A[i]=random.randint(0,100)
+        a=random.randint(0,100)    
+        A.append(a)
     return print(A)
 m = int(input())
 randomization(m)
